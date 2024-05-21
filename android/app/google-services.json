@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "414239312964",
+    "project_id": "khaled-store-3c4a5",
+    "storage_bucket": "khaled-store-3c4a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414239312964:android:d6365d32f02a0c1b2dc011",
+        "android_client_info": {
+          "package_name": "com.example.khaled_store"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6Rwq1OPfOqJIMyQ7_VqaVE35k90kVcLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
