@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:khaled_store/core/app/env.variables.dart';
 
 class KhaledStoreApp extends StatelessWidget {
   const KhaledStoreApp({super.key});
@@ -13,9 +14,10 @@ class KhaledStoreApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Khaled Store"),
+          title: const Text('Khaled Store'),
         ),
       ),
+      debugShowCheckedModeBanner: EnvVariable.instance.debugMode,
     );
   }
 }
