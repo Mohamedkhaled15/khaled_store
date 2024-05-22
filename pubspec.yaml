@@ -32,9 +32,16 @@ dev_dependencies:
     sdk: flutter
   very_good_analysis: ^5.1.0
   flutter_launcher_icons: ^0.13.1  
-
- 
   flutter_lints: ^3.0.0
+
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/appIconImage.png"
+  adaptive_icon_background: "#e69138"
+  adaptive_icon_foreground: "assets/icons/play_store_512.png"
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
