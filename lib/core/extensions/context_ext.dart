@@ -1,21 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:khaled_store/core/style/theme/asset_ext.dart';
+import 'package:khaled_store/core/style/theme/color_ext.dart';
 
 extension ContextExt on BuildContext {
-  // //color
-//   MyColors get color => Theme.of(this).extension<MyColors>()!;
+  //color
+  MyColors get color => Theme.of(this).extension<MyColors>()!;
 
-//   // images
-//   MyAssets get assets => Theme.of(this).extension<MyAssets>()!;
+  // images
+  MyAssets get assets => Theme.of(this).extension<MyAssets>()!;
 
-//   // style
-//   TextStyle get textStyle => Theme.of(this).textTheme.displaySmall!;
+  // style
+  TextStyle get textStyle => Theme.of(this).textTheme.displaySmall!;
 
-// //Language
-//   String translate(String langkey) {
-//     return AppLocalizations.of(this)!.translate(langkey).toString();
-//   }
+//Language
+  // String translate(String langkey) {
+  //   return AppLocalizations.of(this)!.translate(langkey).toString();
+  // }
 
-  //Navigation
+  // Navigation
 
   Future<dynamic> pushName(String routeName, {Object? arguments}) {
     return Navigator.of(this).pushNamed(routeName, arguments: arguments);

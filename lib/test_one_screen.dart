@@ -8,17 +8,23 @@ class TestOneScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
       appBar: AppBar(
         title: const Text('Test One Screen'),
       ),
-      body: Center(
-        child: TextButton(
-          child: const Text('Go To Tow Screen'),
-          onPressed: () {
-            context.pushName(AppRoutes.testTow);
-          },
-        ),
+      body: Column(
+        children: [
+          Image.asset(
+            context.assets.testImage ?? '',
+          ),
+          Center(
+            child: TextButton(
+              child: const Text('Go To Tow Screen'),
+              onPressed: () {
+                context.pushName(AppRoutes.testTow);
+              },
+            ),
+          ),
+        ],
       ),
     );
   }
