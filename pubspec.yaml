@@ -62,6 +62,10 @@ flutter:
     - assets/images/core/
     - lang/ar.json
     - lang/en.json
+    - assets/images/core/
+    - assets/images/admin/
+    - assets/images/customer/
+    - assets/svg/
 
   fonts:
   # Arabic Font 
