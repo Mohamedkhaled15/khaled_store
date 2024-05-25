@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:khaled_store/core/language/app_localization.dart';
 import 'package:khaled_store/core/style/theme/asset_ext.dart';
 import 'package:khaled_store/core/style/theme/color_ext.dart';
 
@@ -13,9 +14,9 @@ extension ContextExt on BuildContext {
   TextStyle get textStyle => Theme.of(this).textTheme.displaySmall!;
 
 //Language
-  // String translate(String langkey) {
-  //   return AppLocalizations.of(this)!.translate(langkey).toString();
-  // }
+  String tr(String langkey) {
+    return AppLocalizations.of(this)!.translate(langkey).toString();
+  }
 
   // Navigation
 

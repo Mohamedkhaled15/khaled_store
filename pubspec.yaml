@@ -15,14 +15,14 @@ dependencies:
 
 
   cupertino_icons: ^1.0.6
-
-  #core
-  
+  #language
+  flutter_localization: ^0.2.0
+  easy_localization: ^3.0.5
+  #core 
   connectivity_plus: ^5.0.2
   flutter_dotenv: ^5.1.0
   flutter_screenutil: ^5.9.1
   flutter_native_splash: ^2.4.0
-  
   #firebase 
   firebase_core: ^2.31.0
 
@@ -60,6 +60,8 @@ flutter:
     - .env.dev
     - .env.prod
     - assets/images/core/
+    - lang/ar.json
+    - lang/en.json
 
   fonts:
   # Arabic Font 

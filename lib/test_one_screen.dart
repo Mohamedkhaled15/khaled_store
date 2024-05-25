@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:khaled_store/core/extensions/context_ext.dart';
+import 'package:khaled_store/core/language/lang_keys.dart';
 import 'package:khaled_store/core/routes/app_routes.dart';
 
 class TestOneScreen extends StatelessWidget {
@@ -24,6 +25,7 @@ class TestOneScreen extends StatelessWidget {
               },
             ),
           ),
+          Text(context.tr(AppLocaleKey.appName)),
         ],
       ),
     );
