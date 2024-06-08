@@ -1,44 +1,46 @@
 name: khaled_store
 description: "A new Flutter project."
 
-publish_to: 'none' 
+publish_to: "none"
 
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.3.4 <4.0.0'
-
+  sdk: ">=3.3.4 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-
   cupertino_icons: ^1.0.6
   #language
   flutter_localization: ^0.2.0
   easy_localization: ^3.0.5
-  #core 
+  #core
   connectivity_plus: ^5.0.2
   flutter_dotenv: ^5.1.0
   flutter_screenutil: ^5.9.1
   flutter_native_splash: ^2.4.0
-  #ui animation 
+  #ui animation
   animate_do: ^3.3.4
   #shared_preferences
   shared_preferences: ^2.2.3
-  #firebase 
+  #firebase
   firebase_core: ^2.31.0
 
-
+  #bloc
+  flutter_bloc: ^8.1.5
+  #Freezed
+  freezed_annotation: ^2.4.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   very_good_analysis: ^5.1.0
-  flutter_launcher_icons: ^0.13.1  
+  flutter_launcher_icons: ^0.13.1
   flutter_lints: ^3.0.0
-
+  build_runner: ^2.4.9
+  freezed: ^2.5.2
 
 flutter_icons:
   android: true
@@ -47,13 +49,11 @@ flutter_icons:
   adaptive_icon_background: "#e69138"
   adaptive_icon_foreground: "assets/icons/play_store_512.png"
 
-
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -72,7 +72,7 @@ flutter:
     - assets/svg/
 
   fonts:
-  # Arabic Font 
+    # Arabic Font
     - family: Cairo
       fonts:
         - asset: assets/fonts/arabic/cairo/Cairo-Bold.ttf
@@ -82,7 +82,7 @@ flutter:
         - asset: assets/fonts/arabic/cairo/Cairo-Regular.ttf
           weight: 400
 
-  # English Font
+    # English Font
     - family: Poppins
       fonts:
         - asset: assets/fonts/english/poppins/Poppins-Bold.ttf
@@ -91,5 +91,3 @@ flutter:
           weight: 500
         - asset: assets/fonts/english/poppins/Poppins-Regular.ttf
           weight: 400
-        
- 
