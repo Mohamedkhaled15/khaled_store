@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:khaled_store/core/common/screens/page_under_build.dart';
 import 'package:khaled_store/core/routes/base_routes.dart';
-import 'package:khaled_store/layout/features/test_one_screen.dart';
-import 'package:khaled_store/layout/features/test_tow_screen.dart';
+import 'package:khaled_store/layout/features/auth/presentation/screens/login_screen.dart';
+import 'package:khaled_store/layout/features/auth/presentation/screens/sign_up_screen.dart';
 
 class AppRoutes {
-  static const String testOne = 'testOne';
-  static const String testTow = 'testTow';
+  static const String logIn = 'logIn';
+  static const String signUp = 'signUp';
   static Route<void> onGenerateRoute(RouteSettings settings) {
     final args = settings.arguments;
     switch (settings.name) {
-      case testOne:
+      case logIn:
         return BaseRoute(
-          page: const TestOneScreen(),
+          page: const LoginScreen(),
         );
-      case testTow:
-        return BaseRoute(page: const TestTowScreen());
+      case signUp:
+        return BaseRoute(page: const SignUpScreen());
 
       default:
         return BaseRoute(page: const PageUnderBuildScreen());

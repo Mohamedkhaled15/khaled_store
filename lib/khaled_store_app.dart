@@ -23,7 +23,7 @@ class KhaledStoreApp extends StatelessWidget {
               //theme
               theme: themeDark(),
               //localization
-              locale: const Locale('ar'),
+              locale: const Locale('en'),
               supportedLocales: AppLocalizationsSetup.supportedLocales,
               localizationsDelegates:
                   AppLocalizationsSetup.localizationsDelegates,
@@ -45,7 +45,7 @@ class KhaledStoreApp extends StatelessWidget {
                 );
               },
               onGenerateRoute: AppRoutes.onGenerateRoute,
-              initialRoute: AppRoutes.testOne,
+              initialRoute: AppRoutes.logIn,
               debugShowCheckedModeBanner: EnvVariable.instance.debugMode,
             ),
           );
