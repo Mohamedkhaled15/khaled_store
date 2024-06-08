@@ -23,26 +23,29 @@ class KhaledStoreApp extends StatelessWidget {
               //theme
               theme: themeDark(),
               //localization
-              locale: const Locale('ar'),
+              locale: const Locale('en'),
               supportedLocales: AppLocalizationsSetup.supportedLocales,
               localizationsDelegates:
                   AppLocalizationsSetup.localizationsDelegates,
-
               localeResolutionCallback:
                   AppLocalizationsSetup.localeResolutionCallback,
-
               builder: (context, widget) {
-                return Scaffold(
-                  body: Builder(
-                    builder: (context) {
-                      ConnectivityController.instance.init();
-                      return widget!;
-                    },
+                return GestureDetector(
+                  onTap: () {
+                    FocusManager.instance.primaryFocus?.unfocus();
+                  },
+                  child: Scaffold(
+                    body: Builder(
+                      builder: (context) {
+                        ConnectivityController.instance.init();
+                        return widget!;
+                      },
+                    ),
                   ),
                 );
               },
               onGenerateRoute: AppRoutes.onGenerateRoute,
-              initialRoute: AppRoutes.testOne,
+              initialRoute: AppRoutes.logIn,
               debugShowCheckedModeBanner: EnvVariable.instance.debugMode,
             ),
           );

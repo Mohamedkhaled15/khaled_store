@@ -23,6 +23,10 @@ dependencies:
   flutter_dotenv: ^5.1.0
   flutter_screenutil: ^5.9.1
   flutter_native_splash: ^2.4.0
+  #ui animation 
+  animate_do: ^3.3.4
+  #shared_preferences
+  shared_preferences: ^2.2.3
   #firebase 
   firebase_core: ^2.31.0
 
@@ -62,6 +66,10 @@ flutter:
     - assets/images/core/
     - lang/ar.json
     - lang/en.json
+    - assets/images/core/
+    - assets/images/admin/
+    - assets/images/customer/
+    - assets/svg/
 
   fonts:
   # Arabic Font 
